@@ -1,0 +1,62 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+#board {
+  position: relative;
+  width: 1024px;
+  height: 863px;
+  margin: auto;
+  background: url(imegs/board.jpg) no-repeat;
+}
+#messageArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(59, 111, 47);
+}
+table {
+  position: absolute;
+  left: 173px;
+  top: 98px;
+  border-spacing: 0px;
+}
+td {
+  width: 94px;
+  height: 94px;
+}
+form {
+  margin: 20px 0 0 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+  background-color: rgb(59, 111, 47);
+  box-shadow: 5px 5px 20px rgb(25, 70, 7);
+  border-radius: 5px;
+  transition: 0.5s all ease;
+}
+form:hover {
+  background-color: rgb(46, 89, 37);
+}
+form input {
+  background-color: rgb(93, 136, 6);
+  font-size: 1.1em;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+form input::placeholder {
+  color: #000;
+}
+
+.hit {
+  background: url(imegs/ship.png) no-repeat center;
+}
+
+.miss {
+  background: url(imegs/miss.png) no-repeat center;
+}
